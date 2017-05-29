@@ -1,4 +1,9 @@
 <h3>{{model.title}}</h3>
-<p>{{model.body}}</p>
+
+<button {{action 'toggleBody'}}>Göm/visa bodyn</button>
+
+{{#if showBody}}
+  <p>{{model.body}}</p>
+{{/if}}
 
 {{outlet}}
