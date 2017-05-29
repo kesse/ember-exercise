@@ -2,10 +2,10 @@ import Ember from 'ember';
 
 export default Ember.Route.extend({
 
-  model() {
+  model(params) {
     return {
       id: 1,
-      title: 'Hej',
+      title: 'Hej ' + params.message_id,
       body: 'Mitt första meddelande'
     }
   }

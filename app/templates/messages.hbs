@@ -1,7 +1,7 @@
 Meddelanden
 <ul>
 {{#each model as |message|}}
-  <li>{{#link-to 'messages.message'}}{{message.title}}{{/link-to}}</li>
+  <li>{{#link-to 'messages.message' message.id}}{{message.title}}{{/link-to}}</li>
 {{/each}}
 </ul>
 
