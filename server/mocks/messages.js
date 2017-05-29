@@ -14,9 +14,7 @@ module.exports = function(app) {
   }];
 
    app.get('/api/messages', function(req, res) {
-     res.send({
-       messages: messages
-     });
+     res.send(messages);
    });
 
    app.get('/api/messages/:id', function(req, res) {
@@ -26,9 +24,7 @@ module.exports = function(app) {
     for (var i = 0; i < messages.length; i++) {
       var message = messages[i];
       if (message.id+"" === id) {
-        res.send({
-          message: message
-        });
+        res.send(message);
 
         return;
       }
