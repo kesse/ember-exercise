@@ -1,10 +1,16 @@
-# Exercise2
+# Exercise 4
 
 Basic ember application to list messages.
 
 Apis:
 /api/messages  
 /api/messages/:id  
+
+/api/comments
+/api/comments/:id
+
+/api/users
+/api/users/:id
 
 ## Prerequisites
 

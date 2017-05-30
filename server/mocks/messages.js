@@ -2,15 +2,18 @@ module.exports = function(app) {
   var messages = [{
     id: 1,
     title: 'Välkommen',
-    body: 'Välkommen till mitt system'
+    body: 'Välkommen till mitt system',
+    comments: []
   },{
     id: 2,
     title: 'Nyheter',
-    body: 'Här kommer lite nyheter'
+    body: 'Här kommer lite nyheter',
+    comments: [1]
   },{
     id: 3,
     title: 'Ny model',
-    body: 'Den nya modellen fungerar väldigt bra'
+    body: 'Den nya modellen fungerar väldigt bra',
+    comments: [2, 3]
   }];
 
    app.get('/api/messages', function(req, res) {
